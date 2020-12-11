@@ -24,9 +24,9 @@ MAX_ENTRY_NUMBER = 1000000
 CSV_EXTENTION = ".csv"
 JSON_EXTENTION = ".json"
 
+NONE_VALUES = ["", " ", "Unknown"]
+
 class Table(Enum):
-    QUESTIONS = "Questions"
-    ANSWERS = "Answers"
-    TAGS = "Tags"
+    talks = "TED"
 
 connection_parameters = {}

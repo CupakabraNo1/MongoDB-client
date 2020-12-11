@@ -31,8 +31,6 @@ class MyMongoClient():
         if len(items) > 0:
             x = self.collection.insert_many(items)
             print("Inserted!")
-            print("Count:")
-            print(len(x.inserted_ids))
             print("-------------------------------")
         else:
             print("Empty list!")

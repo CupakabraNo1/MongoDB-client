@@ -22,7 +22,6 @@ def main():
     data_converter = DataConverter()
 
     for table in variables.Table:
-      print(table.value)
       
       items = data_converter.convert(table.value)
       my_mongo_client.populate_database(table.value.lower(), items)
